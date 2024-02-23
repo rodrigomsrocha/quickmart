@@ -15,7 +15,7 @@ export function Account() {
     <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2 p-12 gap-8">
       <div className="bg-muted p-12 rounded-lg hidden lg:flex flex-col justify-between">
         <h1 className="text-2xl font-medium flex items-center gap-2">
-          <Storefront size={28} weight="regular" />
+          <Storefront size={28} />
           Quickmart
         </h1>
         <p className="text-lg max-w-[500px] font-medium">
