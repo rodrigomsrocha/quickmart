@@ -1,4 +1,6 @@
+import { ShopItem } from '@/components/shop-item'
 import { Button } from '@/components/ui/button'
+import { Separator } from '@/components/ui/separator'
 import hero from '../assets/hero.jpg'
 
 export function Home() {
@@ -20,6 +22,28 @@ export function Home() {
         </div>
         <div className="hidden lg:block overflow-hidden rounded-md w-1/2">
           <img className="w-full h-full object-cover" src={hero} alt="hero" />
+        </div>
+      </div>
+      <div className="space-y-12">
+        <div className="mt-16 max-w-7xl mx-auto flex flex-col items-center gap-8 p-4">
+          <h1 className="font-bold text-4xl">Latest Arivals</h1>
+          <Separator orientation="horizontal" />
+          <div className="grid grid-cols-4 gap-4">
+            <ShopItem />
+            <ShopItem />
+            <ShopItem />
+            <ShopItem />
+          </div>
+        </div>
+        <div className="mt-16 max-w-7xl mx-auto flex flex-col items-center gap-8 p-4">
+          <h1 className="font-bold text-4xl">Summer Collection</h1>
+          <Separator orientation="horizontal" />
+          <div className="grid grid-cols-4 gap-4">
+            <ShopItem />
+            <ShopItem />
+            <ShopItem />
+            <ShopItem />
+          </div>
         </div>
       </div>
     </div>
